@@ -9,9 +9,6 @@ import org.slf4j.LoggerFactory;
 import java.net.SocketTimeoutException;
 import java.util.Map;
 
-/**
- * Created by lichang on 14-1-13.
- */
 public class HttpUtils {
     private static final Logger LOG = LoggerFactory.getLogger(HttpUtils.class);
 
@@ -46,8 +43,7 @@ public class HttpUtils {
     }
 
     public static Connection getConnectionForGet(String url, Map<String, String>... datas) {
-        Connection connection = getConnectionForGetNoCookies(url, datas);
-        return connection;
+        return getConnectionForGetNoCookies(url, datas);
     }
 
     public static String getContentForGet(String url, int timeout) {

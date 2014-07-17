@@ -22,8 +22,7 @@ public class FiatConverter {
     }
 
     private static Double getRate(Date date) {
-        Double rate = USD2CNY;
-        return rate;
+        return USD2CNY;
     }
 
 
